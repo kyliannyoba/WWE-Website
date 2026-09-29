@@ -1,0 +1,1058 @@
+/* =========================
+REGLAGES GENERAUX
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    color: #d1d9e1;
+
+    background-color: #0d0d0d;
+
+    background-image:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 255, 255, 0.03),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 80% 60%,
+            rgba(255, 255, 255, 0.02),
+            transparent 50%
+        );
+}
+
+
+h1,
+h2,
+li {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1 {
+    font-size: 700%;
+    display: flex;
+    justify-content: center;
+}
+
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+
+section {
+    display: flex;
+    gap: 10px;
+    border-radius: 50px;
+    margin: 3%;
+}
+
+li {
+    font-size: xx-large;
+}
+
+
+
+/* =========================
+DESCRIPTION
+========================= */
+
+.description {
+    text-align: center;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+
+
+/* =========================
+   HAUT DE PAGE
+========================= */
+
+.tete {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    height: 400px;
+
+    gap: 30px;
+}
+
+
+.bloc {
+    width: 70%;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.WWE {
+    width: 450px;
+}
+
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav,
+.titre {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+
+ul {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+
+.slogan,
+.titre {
+    height: 70px;
+}
+
+
+.titre {
+    align-items: center;
+}
+
+
+.slogan li {
+    cursor: pointer;
+}
+
+
+li:hover {
+    transform: scale(1.05);
+}
+
+
+.wrapper,
+.nav,
+.titre {
+    border: solid;
+    border-radius: 50px;
+}
+
+
+
+/* =========================
+   DIAPORAMA
+========================= */
+
+.affiche {
+    position: relative;
+
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+}
+
+
+.b {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    opacity: 0;
+
+    animation-name: fadeSlide;
+    animation-duration: 91s;
+    animation-iteration-count: infinite;
+
+    transform: translateY(30px);
+}
+
+
+.slide {
+    display: grid;
+    place-items: center;
+
+    min-height: 100vh;
+
+    font-family: 'Google Sans', sans-serif, system-ui;
+}
+
+
+.b:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.b:nth-child(2) {
+    animation-delay: 7s;
+}
+
+.b:nth-child(3) {
+    animation-delay: 14s;
+}
+
+.b:nth-child(4) {
+    animation-delay: 21s;
+}
+
+.b:nth-child(5) {
+    animation-delay: 28s;
+}
+
+.b:nth-child(6) {
+    animation-delay: 35s;
+}
+
+.b:nth-child(7) {
+    animation-delay: 42s;
+}
+
+.b:nth-child(8) {
+    animation-delay: 49s;
+}
+
+.b:nth-child(9) {
+    animation-delay: 56s;
+}
+
+.b:nth-child(10) {
+    animation-delay: 63s;
+}
+
+.b:nth-child(11) {
+    animation-delay: 70s;
+}
+
+.b:nth-child(12) {
+    animation-delay: 77s;
+}
+
+.b:nth-child(13) {
+    animation-delay: 84s;
+}
+
+
+@keyframes fadeSlide {
+
+    0% {
+        opacity: 0;
+    }
+
+    0.55% {
+        opacity: 1;
+    }
+
+    7.14% {
+        opacity: 1;
+    }
+
+    7.69% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+/* =========================
+   MONEY IN THE BANK
+========================= */
+
+.rangement {
+    display: flex;
+    flex-direction: column;
+
+    gap: 40px;
+
+    padding: 40px;
+}
+
+
+.mitb2 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.presentation {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 50px;
+}
+
+
+.edit {
+    width: 55%;
+}
+
+
+.edit video {
+    width: 100%;
+
+    aspect-ratio: 16 / 9;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+
+    display: block;
+}
+
+
+.mitb-texte {
+    width: 45%;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 1.1rem;
+    line-height: 1.8;
+
+    color: #fff;
+
+    margin: 0;
+}
+
+
+.titre-mitb {
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+
+.titre-mitb .etiquette {
+    background-color: #e10600;
+
+    color: #fff;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 2px;
+
+    padding: 6px 16px;
+
+    border-radius: 20px;
+
+    margin: 0;
+}
+
+
+.titre-mitb h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 3rem;
+
+    color: #fff;
+
+    margin: 0;
+}
+
+
+.etiquette {
+    align-self: flex-start;
+
+    background-color: #e10600;
+
+    color: #fff;
+
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 2px;
+
+    padding: 6px 16px;
+
+    border-radius: 20px;
+}
+
+
+.edit h2 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 2.5rem;
+
+    color: #fff;
+}
+
+
+
+/* =========================
+   SMACKDOWN / RAW / NXT
+========================= */
+
+.show {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+
+
+.carte {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background-color: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+
+    height: 250px;
+
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+
+    cursor: pointer;
+}
+
+
+.sm,
+.raw,
+.nxt {
+    width: 70%;
+}
+
+
+.texte {
+    position: absolute;
+
+    inset: 0;
+
+    background-color: rgba(0, 0, 0, 0.88);
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    text-align: center;
+
+    opacity: 0;
+
+    transition: opacity 0.3s;
+
+    cursor: pointer;
+}
+
+
+.carte:hover .texte {
+    opacity: 1;
+}
+
+
+.texte h3 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+}
+
+
+.texte p {
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+}
+
+
+
+/* SMACKDOWN */
+
+.show > .lien-carte .texte h3 {
+    color: #2f80ff;
+}
+
+
+.show > .lien-carte .carte:hover {
+    box-shadow: 0 0 25px #2f80ff;
+}
+
+
+
+/* RAW */
+
+.show > .carte:nth-of-type(1) .texte h3 {
+    color: #e10600;
+}
+
+
+.show > .carte:nth-of-type(1):hover {
+    box-shadow: 0 0 25px #e10600;
+}
+
+
+
+/* NXT */
+
+.show > .carte:nth-of-type(2) .texte h3 {
+    color: #d4af37;
+}
+
+
+.show > .carte:nth-of-type(2):hover {
+    box-shadow: 0 0 25px #d4af37;
+}
+
+
+
+/* =========================
+   LIEN VERS SMACKDOWN
+========================= */
+
+.lien-carte {
+    display: flex;
+
+    flex: 1;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+.lien-carte .carte {
+    width: 100%;
+}
+
+
+
+/* =========================
+   SUPERSTARS PAGE D'ACCUEIL
+========================= */
+
+:root {
+    --nb-images: 22;
+}
+
+
+.wrapper {
+    overflow: hidden;
+}
+
+
+.Superstars {
+    display: flex;
+
+    gap: 5px;
+
+    height: 150px;
+
+    width: max-content;
+
+    animation-name: infiniteScroll;
+    animation-duration: calc(var(--nb-images) * 1s);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes infiniteScroll {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+
+/* ============================================================
+   PAGE SMACKDOWN
+============================================================ */
+
+.main-smackdown {
+    min-height: 100vh;
+}
+
+
+
+/* =========================
+   BOUTON RETOUR
+========================= */
+
+.header-smackdown {
+    padding: 30px 5%;
+}
+
+
+.retour {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 1.4rem;
+
+    color: white;
+
+    text-decoration: none;
+
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+}
+
+
+.retour:hover {
+    color: #2f80ff;
+}
+
+
+
+/* =========================
+   INTRO SMACKDOWN
+========================= */
+
+.intro-smackdown {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 40px 5% 80px;
+
+    padding: 60px 40px;
+
+    border: 2px solid #2f80ff;
+
+    border-radius: 30px;
+}
+
+
+.logo-smackdown {
+    width: 500px;
+
+    max-width: 80%;
+
+    margin-bottom: 30px;
+}
+
+
+.intro-smackdown h1 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 5rem;
+
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 50px;
+}
+
+
+
+/* =========================
+   3 BLOCS SMACKDOWN
+========================= */
+
+.infos-smackdown {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.info-smackdown {
+    flex: 1;
+
+    max-width: 380px;
+
+    min-height: 230px;
+
+    padding: 30px;
+
+    background-color: #111;
+
+    border: 1px solid #2f80ff;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.info-smackdown:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 25px
+        rgba(47, 128, 255, 0.6);
+}
+
+
+.info-smackdown h2 {
+    color: #2f80ff;
+
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+
+.info-smackdown p {
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    color: #d1d9e1;
+}
+
+
+
+/* =========================
+   ROSTER SMACKDOWN
+========================= */
+
+.roster-smackdown {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    margin: 80px 5%;
+
+    padding: 50px;
+}
+
+
+.roster-smackdown > h2 {
+    font-size: 4rem;
+
+    color: white;
+
+    margin-bottom: 40px;
+}
+
+
+.grille-roster {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.superstar-card {
+    background-color: #111;
+
+    border: 1px solid #2f80ff;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.superstar-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 0 25px
+        rgba(47, 128, 255, 0.6);
+}
+
+
+.superstar-card img {
+    width: 100%;
+
+    height: 330px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+.superstar-card h3 {
+    font-family: 'Bebas Neue', sans-serif;
+
+    font-size: 1.8rem;
+
+    padding: 15px;
+
+    color: white;
+}
+
+
+
+/* ============================================================
+RESPONSIVE TELEPHONE
+============================================================ */
+
+@media screen and (max-width: 768px) {
+
+
+    /* =====================
+    PAGE D'ACCUEIL
+    ===================== */
+
+    .tete {
+        height: 250px;
+    }
+
+
+    .WWE {
+        width: 280px;
+    }
+
+
+    .slogan li {
+        font-size: 1.2rem;
+    }
+
+
+    h1 {
+        font-size: 3.5rem;
+
+        text-align: center;
+
+        padding: 0 15px;
+    }
+
+
+    .description {
+        font-size: 1rem;
+
+        padding: 0 25px;
+    }
+
+
+
+    /* DIAPORAMA */
+
+    .slide {
+        min-height: auto;
+    }
+
+
+    .affiche {
+        height: 300px;
+    }
+
+
+
+    /* MONEY IN THE BANK */
+
+    .rangement {
+        padding: 15px;
+    }
+
+
+    .presentation {
+        flex-direction: column;
+
+        gap: 25px;
+    }
+
+
+    .edit {
+        width: 100%;
+    }
+
+
+    .mitb-texte {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .titre-mitb {
+        width: 100%;
+
+        align-items: center;
+    }
+
+
+    .titre-mitb .etiquette {
+        align-self: center;
+
+        text-align: center;
+    }
+
+
+
+    /* RAW / SMACKDOWN / NXT */
+
+    .show {
+        flex-direction: column;
+    }
+
+
+    .carte {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+    .lien-carte {
+        width: 100%;
+
+        flex: none;
+    }
+
+
+
+    /* SUPERSTARS */
+
+    .Superstars {
+        height: 110px;
+    }
+
+
+
+    /* =====================
+    PAGE SMACKDOWN
+    ===================== */
+
+    .header-smackdown {
+        padding: 20px;
+    }
+
+
+    .intro-smackdown {
+        margin: 20px;
+
+        padding: 30px 15px;
+    }
+
+
+    .logo-smackdown {
+        width: 300px;
+    }
+
+
+    .intro-smackdown h1 {
+        font-size: 3rem;
+
+        margin-bottom: 30px;
+    }
+
+
+
+    /* 3 BLOCS */
+
+    .infos-smackdown {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .info-smackdown {
+        width: 100%;
+
+        max-width: 100%;
+
+        min-height: auto;
+    }
+
+
+
+    /* ROSTER */
+
+    .roster-smackdown {
+        margin: 40px 20px;
+
+        padding: 20px 10px;
+    }
+
+
+    .roster-smackdown > h2 {
+        font-size: 3rem;
+
+        text-align: center;
+    }
+
+
+    .grille-roster {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .superstar-card img {
+        height: 230px;
+    }
+
+
+    .superstar-card h3 {
+        font-size: 1.4rem;
+    }
+
+}
